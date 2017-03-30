@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "a tool for port to search and kill Edit",
   "main": "index.js",
+  "bin": {
+    "killport": "bin/killport.js"
+  },
   "scripts": {
     "build": "./node_modules/.bin/babel src -d lib ",
     "prepublish": "npm run build",

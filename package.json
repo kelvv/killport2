@@ -1,0 +1,21 @@
+{
+  "name": "killport2",
+  "version": "1.0.0",
+  "description": "a tool for port to search and kill Edit",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d lib ",
+    "prepublish": "npm run build",
+    "dev": "npm run build && node bin/killport"
+  },
+  "repository": "git@github.com:kelvv/killport2.git",
+  "author": "kelvv <kelvv@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}

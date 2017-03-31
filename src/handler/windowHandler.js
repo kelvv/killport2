@@ -11,7 +11,11 @@ module.exports = {
           let processName = /(^\S+)/.exec(msg)[1]
           exec(`taskkill -f -t -im ${processName}`).then(() => {
             console.log(`${port} have been killed`)
+          }, (err) => {
+            console.log(err)
           })
+        }, (err) => {
+          console.log(err)
         })
       }
     }, () => {
